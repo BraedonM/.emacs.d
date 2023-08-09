@@ -1,0 +1,1 @@
+c:/Users/braedonm/AppData/Roaming/.emacs.d/straight/repos/editorconfig-emacs/editorconfig.el

@@ -1,0 +1,114 @@
+Bottom line is called the minibuffer
+Buffer = (file) item stored inside emacs
+Files autosave with format #(file.ext)#
+
+C - h   k   (command) = Help info on that command
+C - h   c   (command) = Short-form help info in minibuffer
+C - h   a   (keyword) = Searches commands by keyword
+C - h	i			  = Open emacs info panel
+<ESC> <ESC> <ESC>	  = All-purpose "get out" command
+C - u  (#)  (command) = Repeats that command # many times
+C - g	=	Cancel Command
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+-=-=-=-=-=- NAVIGATION -=-=-=-=-=-
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+M - g  g 	=   Jump to line
+C - <SPC>	=	Set mark
+C - x C - x =	Jump between current pos and mark
+C-u C-<SPC> =   Cycle through mark ring (last 16 marks)
+
+C - v		=	Move forward a page
+M - v		=	Move backward a page
+C - l		=	Center page on cursor
+
+M - f		=	Forward a word	 (C - arrow right)
+M - b		=	Backward a word	 (C - arrow left)
+
+C - n		=	Next line	 	 (arrow down)
+C - p		=	Previous line	 (arrow up)
+C - f		=	Forward in line	 (arrow right)
+C - b		=	Backward in line (arrow left)
+C - e		=	Move to end of line
+C - a		=	Move to beginning of line
+
+M - >		=	Beginning of whole text
+M - <		=	End of whole text
+
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=-=-=-=-=-=-=- FILES -=-=-=-=-=-=-
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+M - x  dired  =  File manager
+C - x  C - q  =  Change to editable dired mode
+C - x  C - f  =  Find/create a file
+C - x  C - s  =  Save file
+C - x  C - b  =  List buffers (files stored inside emacs)
+C - x  s	  =  Save some buffers to files
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=-=-=-=- TEXT MANIPULATION -=-=-=-=
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+C - w	=	Kill (cut)
+C - d	=	Delete
+C - y	=	Yanking (paste)
+M - y	=	Yank from kill history
+M - w	=	Copy
+C - /	=	Undo
+
+C - k	=	Kill current line
+M - k	=	Delete from cursor to end of sentence
+C-<SPC> =   Select Mode (C - g to stop)
+C - x h = 	Select all
+M - h 	=	Select current paragraph
+
+C - s	=	Search AFTER cursor
+C - r	=	Search BEFORE cursor
+M - %	=	Search & Replace
+
+C - x v =   Show current file diff
+
+M - C - <ret> = Copilot complete all
+C - <right>   = Copilot complete by word
+C - <down>	  = Copilot complete by line
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+-=-=-=- WINDOW MANIPULATION -=-=-=-
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+C - X   1	=	Kills all windows except current one
+C - x   2	=	Split screen into 2 windows
+C - x   o	=	Change window focus
+C - M - v	=	Scroll unfocused window up
+
+C - x   5   2  = Open new frame
+C - x   5   0  = Close selected frame
+C - x   C - c  = Kills emacs
+
+M - x   shell  = Opens shell
+M - x   compile / gdb / grep = invokes output using tool
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+-=-=-=-=- VERSION CONTROL -=-=-=-=-
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+(Emacs auto-detects if a file is under VC)
+C - x  v  v  =  Commit current file
+C - x  v  =	 =  Show diff of current file
+C - x  v  ~  =  Shows specified version in new window
+C - x  v  g  =  Show annotations of file
+C - x  v  l  =  Displays log of changes to file
+
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=-=-=-=-=-=-=- EXTRA -=-=-=-=-=-=-
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+M - !	=  Shell command
+M - x  calculator 	  =  Opens calculator
+M - x  calendar		  =  Opens calendar
+M - x  phases-of-moon =  Upcoming quarters of moon
+
+M - x  tetris		  =  Tetris
+M - x  hanoi		  =  Towers of hanoi game
+M - x  doctor		  =  Emacs psychotherapist??
